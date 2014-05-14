@@ -1,0 +1,43 @@
+1.1:	Bugfix to hwwn.test. p-value now being computed correctly
+	from the cdf.
+
+1.2:	Added bartlettB.test and cumperiod: to compute Bartlett's B-test for
+	white noise.
+
+	Upgraded compute.rejection. This can now compute empirical power
+	for all the new tests you can optionally select or deselect
+	the ones you wish to compute. 
+
+	Added d00.test. Similar to hwwn.test but ONLY computes the single
+	coarsest scale wavelet coefficient, and tests this for zeroness.
+	Reason for this test: the coefficient is computed not from the 
+	periodogram, but from the autocorrelation coefficients, showing that
+	a wavelet-based test on the periodogram can be computed from
+	an equivalent particular linear combination of autocorrelations.
+
+	Added genwwn.test. Similar to hwwn.test except that (i) it computes
+	the wavelet coefficients with respect to any wavelet and (ii) only
+	looks at the zeroness of coefficients are medium- to coarse scales
+	(not the fine scales). For many spectra you'd expect in practice
+	this is a good thing because smooth spectra have sparse wavelet
+	expansions and almost no signal at finer scales anyway.
+
+	Added genwwn.thpower: Computes approximate theoretical power
+	(or size) for the gennwn.test
+
+	Added hywavwn.test: a hybrid test mixing hwwn.test and genwwn.test
+
+	Added hywn.test: a hybrid of Box.test, bartlettB.test, hwwn.test
+		and genwwn.test
+
+	Added normwhn2.test: a copy of the whitenoise.test from the
+	normwhn package
+
+	Added the squared wavelet transform: sqwd and helper functions. Useful
+	for calculating variances of wavelet coefficients
+
+1.3 	Bugfix for the bartlettB.test. Delyan noticed that the periodogram
+	should be computed on frequencies 2:q not 1:q, i.e. omitting the DC
+	component. Functions bartlettB.test and cumperiod have been modified.
+
+	Changed packages from Depends to Imports

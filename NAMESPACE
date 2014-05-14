@@ -1,0 +1,4 @@
+import(parallel)
+import(wavethresh)
+import(polynom)
+exportPattern("^[[:alpha:]]+")
