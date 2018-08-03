@@ -2,3 +2,8 @@ import(parallel)
 import(wavethresh)
 import(polynom)
 exportPattern("^[[:alpha:]]+")
+importFrom("graphics", "hist", "lines", "plot", "points")
+importFrom("stats", "Box.test", "acf", "approx", "approxfun",
+	"arima.sim", "density", "dnorm", "ecdf", "fft", "integrate",
+	"p.adjust", "p.adjust.methods", "pnorm", "qnorm", "rnorm",
+	"var")

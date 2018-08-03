@@ -41,3 +41,8 @@
 	component. Functions bartlettB.test and cumperiod have been modified.
 
 	Changed packages from Depends to Imports
+
+1.3.1	Made new hwwntest-package.Rd document (in response to Kurt Hornik email
+	of 18th May 2018). Essentially, this means replacing some content
+	with macros so the -package.Rd document stays synced with the
+	version numbers.

@@ -2,43 +2,46 @@
 \alias{hwwntest-package}
 \alias{hwwntest}
 \docType{package}
-\title{Performs hypothesis tests for white noise for time series data.
+\title{
+\packageTitle{hwwntest}
 }
-\description{Contains a variety of hypothesis tests for white noise data.
-	The package contains an implementation of Bartlett's B test,
-	\code{\link{bartlettB.test}},
-	(Kolmogorov-Smirnov test on the cumulative periodogram),
-	a selection of wavelet-based tests
-	\code{\link{hwwn.test}} a test using Haar wavelets,
-	\code{\link{d00.test}} a single Haar wavelet coefficient test,
-	\code{\link{genwwn.test}} a test using smoother Daubechies
-	wavelets, a hybrid test \code{\link{hywavwn.test}}
-	that uses Haar wavelets at fine scales and general wavelets
-	at coarse scales and a omnibus test
-	\code{\link{hywn.test}} that combines the results of  four tests
-	(\code{hwwn.test}, \code{genwwn.test}, \code{bartlettB.test}
-	and the \code{Box.test})
-	The wavelet tests work by examining
-	the wavelet transform of the regular periodogram
-	and assess whether it has non-zero coefficients.
-	If series is H_0: white noise,
-	then the underlying spectrum is constant (flat) and all true wavelet
-	coefficients will be zero. Then all periodogram wavelet coefficients
-	will have true zero mean which can be tested using knowledge of,
-	or approximation to, the
-	coefficient distribution.
+\description{
+\packageDescription{hwwntest}
 }
 \details{
-\tabular{ll}{
-Package: \tab hwwntest\cr
-Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2014-03-21\cr
-License: \tab GPL-2\cr
+
+The DESCRIPTION file:
+\packageDESCRIPTION{hwwntest}
+\packageIndices{hwwntest}
+
+Contains a variety of hypothesis tests for white noise data.
+        The package contains an implementation of Bartlett's B test,
+        \code{\link{bartlettB.test}},
+        (Kolmogorov-Smirnov test on the cumulative periodogram),
+        a selection of wavelet-based tests
+        \code{\link{hwwn.test}} a test using Haar wavelets,
+        \code{\link{d00.test}} a single Haar wavelet coefficient test,
+        \code{\link{genwwn.test}} a test using smoother Daubechies
+        wavelets, a hybrid test \code{\link{hywavwn.test}}
+        that uses Haar wavelets at fine scales and general wavelets
+        at coarse scales and a omnibus test
+        \code{\link{hywn.test}} that combines the results of  four tests
+        (\code{hwwn.test}, \code{genwwn.test}, \code{bartlettB.test}
+        and the \code{Box.test})
+        The wavelet tests work by examining
+        the wavelet transform of the regular periodogram
+        and assess whether it has non-zero coefficients.
+        If series is H_0: white noise,
+        then the underlying spectrum is constant (flat) and all true wavelet
+	 coefficients will be zero. Then all periodogram wavelet coefficients
+        will have true zero mean which can be tested using knowledge of,
+        or approximation to, the
+        coefficient distribution.
 }
-}
-\author{Delyan Savchev and Guy Nason.
-Maintainer: <g.p.nason@bristol.ac.uk>
+\author{
+\packageAuthor{hwwntest}
+
+Maintainer: \packageMaintainer{hwwntest}
 }
 \references{
 Nason, G.P. and Savchev, D. (2014) White noise testing using
@@ -46,10 +49,9 @@ wavelets. \emph{Stat}, \bold{3}, 351-362.
 \url{http://dx.doi.org/10.1002/sta4.69}
 }
 \keyword{ package }
-\seealso{\code{\link{hwwn.test}}
-}
+\seealso{\code{\link{hwwn.test}}}
 \examples{
-     # Invent test data set which IS white noise
+ # Invent test data set which IS white noise
      #
      x <- rnorm(128)
      #
@@ -63,7 +65,7 @@ wavelets. \emph{Stat}, \bold{3}, 351-362.
      #
      #       Wavelet Test of White Noise
      #
-     #data:  
+     #data:
      #p-value = 0.9606
      #
      # So p-value indicates that there is no evidence for rejection of
@@ -83,11 +85,12 @@ wavelets. \emph{Stat}, \bold{3}, 351-362.
      #
      #       Wavelet Test of White Noise
      #
-     #data:  
+     #data:
      #p-value < 2.2e-16
      #
      # p-value is very small. Extremely strong evidence
      # to reject H_0: white noise
+     #
      #
      # Let's use one of the other tests: e.g. the general wavelet one
      #
@@ -98,9 +101,9 @@ wavelets. \emph{Stat}, \bold{3}, 351-362.
      print(x.ar.genwwntest)
      #
      #
-     #	Wavelet Test of White Noise
+     #  Wavelet Test of White Noise
      #
-     # data:  
+     # data:
      # p-value = 1.181e-10
      #
      # Again, p-value is very small

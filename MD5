@@ -1,5 +1,5 @@
-c373becb85e09645aacfd40ad269f2da *DESCRIPTION
-b782f0364e294f516612815098615b41 *NAMESPACE
+4c25db655a5b4cbec4db5cda58e85023 *DESCRIPTION
+4b39b8e8611f6b22a02f4c3798fb1ffd *NAMESPACE
 719860c96c09ebfff9ad4e1bed85db53 *R/Macdonald.R
 1e29edda2aaeddbcc649b82257f55e12 *R/bartlettB.test.R
 89a661947f1b350b0a75c17dfe592f94 *R/compute.rejection.R
@@ -17,7 +17,8 @@ f8f04080ccf3aa17115879ab26f2d11c *R/hwwntest-internal.R
 06210a090759e894deb96c6426c000cf *R/sqndwd.R
 4ffb5b52a9a4b7956bea872a0aca9c4b *R/sqndwdecomp.R
 a87491b949b8babfcda658c3b9793e59 *R/sqwd.R
-12b6feed07177d19edc53c70ca03f950 *inst/CHANGES
+402401ed48f1cd5802a2c74803bd3061 *build/partial.rdb
+8d136a5a852a5ccfe54620478077b7af *inst/CHANGES
 085f1aa1041b860e1887b121fabcb85e *man/Macdonald.Rd
 87055672b6e0033c87854ce839deff54 *man/bartlettB.test.Rd
 00908e15110a6f5d2b4d666e17239671 *man/compute.rejection.Rd
@@ -28,7 +29,7 @@ c42c0d3802e0ef9b60cf0c11cd3ac465 *man/genwwn.powerplot.Rd
 0ad0629aca7bece25ab73827242d8c42 *man/genwwn.thpower.Rd
 3809c3d6d84ec2274094922945d0a2f7 *man/hwwn.dw.Rd
 29accb49c99bf6c4f5110d6c586aed47 *man/hwwn.test.Rd
-d1d558dd4a5949f557806e8167e8376d *man/hwwntest-package.Rd
+714d75b83157c05f91431814ebe1f3c8 *man/hwwntest-package.Rd
 4ba912cee71297fdd05399ddd3bcf14d *man/hywavwn.test.Rd
 c435b76c4c651918012a3e92dfe625cd *man/hywn.test.Rd
 2ab768f9a2a796081c1ad72071d3e838 *man/sqcoefvec.Rd
