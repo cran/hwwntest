@@ -46,7 +46,7 @@ Maintainer: \packageMaintainer{hwwntest}
 \references{
 Nason, G.P. and Savchev, D. (2014) White noise testing using
 wavelets. \emph{Stat}, \bold{3}, 351-362.
-\url{http://dx.doi.org/10.1002/sta4.69}
+\doi{10.1002/sta4.69}
 }
 \keyword{ package }
 \seealso{\code{\link{hwwn.test}}}

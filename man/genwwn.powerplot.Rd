@@ -83,7 +83,7 @@ genwwn.powerplot(N =c(32, 64, 128, 256, 512, 1024), ar = NULL,
 \references{
 Nason, G.P. and Savchev, D. (2014) White noise testing using
 wavelets. \emph{Stat}, \bold{3}, 351-362.
-\url{http://dx.doi.org/10.1002/sta4.69}
+\doi{10.1002/sta4.69}
 }
 \author{Delyan Savchev and Guy Nason
 }
@@ -95,11 +95,11 @@ wavelets. \emph{Stat}, \bold{3}, 351-362.
 #
 # Plot theoretical power for white noise
 #
-\dontrun{genwwn.powerplot()}
+\donttest{genwwn.powerplot()}
 #
 # Plot theoretical power for AR(1) process
 #
-\dontrun{genwwn.powerplot(ar=0.8)}
+\donttest{genwwn.powerplot(ar=0.8)}
 }
 \keyword{htest}
 \keyword{ts}

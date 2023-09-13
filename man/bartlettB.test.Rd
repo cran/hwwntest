@@ -42,11 +42,11 @@ components:
 Bartlett, M.S. (1967) Some Remarks on the Analysis of Time-Series.
 \emph{J. R. Statist. Soc. B}, \bold{54}, 25-38.
 
-\url{http://www.stat.tamu.edu/~jnewton/stat626/topics/topics/topic13.pdf} Link to Professor H. Joseph Newton's web page on Bartlett's test
+\url{https://web.stat.tamu.edu/~jnewton/stat626/topics/topics/topic13.pdf} Link to Professor H. Joseph Newton's web page on Bartlett's test
 
 Nason, G.P. and Savchev, D. (2014) White noise testing using
 wavelets. \emph{Stat}, \bold{3}, 351-362.
-\url{http://dx.doi.org/10.1002/sta4.69}
+\doi{10.1002/sta4.69}
 }
 \author{
 G. P. Nason
